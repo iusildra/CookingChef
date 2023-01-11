@@ -132,7 +132,7 @@ public class IngredientController implements Initializable {
      * @param imageIngredient the image ingredient
      * @param isAllergen      the is allergen
      */
-    public void createIngredient(String nameIngredient, byte[] imageIngredient, Boolean isAllergen) {
+    public void createIngredient(String nameIngredient, byte[] imageIngredient, boolean isAllergen) {
         try {
             if (this.ingredientFacade.createIngredient(nameIngredient, imageIngredient, isAllergen)) {
                 this.secondaryStage.close();
